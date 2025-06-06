@@ -1,81 +1,88 @@
-<h1 align="center">Hi 👋, I'm Mohammed Bilal</h1>
-<h3 align="center">🚀 A 2nd-year CSE student passionate about software development and building impactful digital solutions.</h3>
+<h1 align="center">🚀 Mohammed Bilal</h1>
+<h3 align="center">Software Developer | CSE @ PES University | MERN Stack | Game Dev Enthusiast</h3>
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/4d9f5ecceb711eec6e2018f38a5677dc657c9738d4a65ba3b928c41c0a45b439/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966" width="300"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=F97316&width=435&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Bilal;CSE+Student+%7C+MERN+Developer;I+Love+Building+Cool+Tech+Projects!" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/mohammedbilal12345?tab=followers">
-    <img src="https://img.shields.io/github/followers/mohammedbilal12345?label=Followers&style=social" alt="GitHub Followers">
-  </a>
-  <a href="mailto:mohammedbilal96654@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://mohammedbilal9739.netlify.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?&style=flat&logo=firefox&logoColor=white" alt="Portfolio Badge"/>
-  </a>
-  <a href="https://linkedin.com/in/mohammed-bilal-23678328a" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="https://instagram.com/b.i_la.l" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat&logo=instagram&logoColor=white" alt="Instagram Badge"/>
-  </a>
-  <a href="https://www.hackerrank.com/pes2ug23cs344" target="_blank">
-    <img src="https://img.shields.io/badge/Hackerrank-2EC866.svg?style=flat&logo=HackerRank&logoColor=white" alt="Hackerrank Badge"/>
-  </a>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmx2YXh2bDhwdWl6eTZ6dXliOXBkcGNqZXFxb3g3NHR1bmZ6YmJuaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4ak9Ki2GZCbJxAnJD/giphy.gif" width="300" />
 </p>
 
 ---
 
-### 🔥 About Me
-- 🎓 I'm a 2nd-year CSE student from **PES University**
-- 🌱 Currently learning **Docker** and exploring **AI/ML & DevOps**
-- 💬 Ask me about **React, C Programming, Node.js, MongoDB, Firebase**
-- 💼 Looking for web development internships & freelance opportunities
-- 📫 Reach me at: **mohammedbilal96654@gmail.com**
-- 🌐 Portfolio: [mohammedbilal.vercel.app](https://mohammedbilal.vercel.app/)
+## 👨‍💻 About Me
+
+- 🎓 Second-Year CSE student at PES University  
+- 🔧 Currently learning **Docker** & exploring **System Design**
+- 💻 Tech Stack: **MERN**, **C**, **Unreal Engine**, **Tailwind CSS**, **Flask**
+- 🛠️ Actively building professional projects & tools
+- 📫 Reach me: `mohammedbilal96654@gmail.com`
+- 🌐 Portfolio: [mohammedbilal9739.netlify.app](https://mohammedbilal9739.netlify.app)
 
 ---
 
-### 🧠 Tech Stack
+## 📲 Connect With Me
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,react,nodejs,express,mongodb,python,c,git,github,vscode,vite,bootstrap,tailwind,docker,unreal" />
+  <a href="https://linkedin.com/in/mohammed-bilal-23678328a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://instagram.com/b.i_la.l" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://www.hackerrank.com/pes2ug23cs344" target="_blank"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" /></a>
+  <a href="mailto:mohammedbilal96654@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
 
-### 🏆 Achievements & Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mohammedbilal12345&theme=onedark&no-frame=true&margin-w=10" />
-</p>
+## 🧠 Skills & Tools
 
----
-
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohammedbilal12345&show_icons=true&theme=tokyonight&locale=en" alt="GitHub Stats" />
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammedbilal12345&theme=tokyonight" alt="GitHub Streak" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mohammedbilal12345&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
-
----
-
-### 📈 Profile Views
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=mohammedbilal12345&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,react,nodejs,mongodb,tailwind,bootstrap,c,python,git,github,docker,vite,vscode,unreal" />
 </p>
 
 ---
 
-### 🎯 Fun Fact
-> 💡 I once wrote a line of code so clean, my compiler wrote me a thank-you note 😎  
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mohammedbilal12345&theme=gruvbox&margin-w=10&row=2&column=3" />
+</p>
 
 ---
 
-> _Built with ❤️ by Mohammed Bilal_  
-> _Let’s connect, collaborate, and create something amazing!_
+## 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammedbilal12345&show_icons=true&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammedbilal12345&layout=compact&theme=radical&hide_border=true" width="47%" />
+</div>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammedbilal12345&theme=radical&hide_border=true" />
+</p>
+
+---
+
+## 🚀 Highlight Projects
+
+| Project | Description | Tech |
+| 🔒 **Sécurité Système** | eCommerce platform for security products | React, Node.js, MongoDB |
+| 🤖 **SmartCartBot** | AI chatbot for shopping assistance | Flask, JavaScript, BotUI |
+| 💳 **Credit Card Fraud Detection** | Machine learning model to detect fraudulent transactions using real-world anonymized credit card data | Python, Pandas, Scikit-learn, Jupyter |
+| 🌐 **Portfolio Website** | Personal portfolio hosted on Netlify | HTML, CSS, JS |
+
+
+---
+
+## 📌 Quote I Live By
+
+> _“Code is like humor. When you have to explain it, it’s bad.” – Cory House_
+
+---
+
+<p align="center">
+  <img src="https://media.tenor.com/KP2dU9C8uDoAAAAC/developer.gif" width="300"/>
+</p>
+
+---
+
+**Built with 💡 using Markdown | Maintained by Mohammed Bilal**
