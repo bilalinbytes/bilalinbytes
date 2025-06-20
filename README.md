@@ -18,7 +18,7 @@
 - 💻 Tech Stack: **MERN**, **C**, **Unreal Engine**, **Tailwind CSS**, **Flask**
 - 🛠️ Actively building professional projects & tools
 - 📫 Reach me: `mohammedbilal96654@gmail.com`
-- 🌐 Portfolio: [mohammedbilal9739.netlify.app](https://bilalm.vercel.app/)
+- 🌐 Portfolio: [https://bilalm.vercel.app/](https://bilalm.vercel.app/)
 
 ---
 
