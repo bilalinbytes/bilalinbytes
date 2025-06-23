@@ -61,9 +61,8 @@
 | 🔒 **Sécurité Système** | eCommerce platform for security products | React, Tailwind, Node.js, MongoDB |
 | 🤝 **TeamBanalo** | Smart hackathon collaboration platform with AI teammate suggestions | React, FastAPI, Supabase, LangChain |
 | 🌐 **Portfolio Website** | Personal responsive portfolio hosted on Vercel | React, Tailwind, Framer Motion |
-| 📊 **Budget Survey 2024** | Interactive budget feedback form using frontend validation | HTML, CSS, JS |
 
-> 👀 Explore my projects [here](https://github.com/mohammedbilal12365)
+> 👀 Explore my projects [here](https://github.com/Mohammedbilal12345)
 
 ---
 
