@@ -1,28 +1,28 @@
 <h1 align="center">🚀 Mohammed Bilal</h1>
-<h3 align="center">Aspiring Software Developer | CSE @ PES University | MERN Stack | Game Dev Enthusiast</h3>
+<h3 align="center">Aspiring Software Developer | CSE @ PES University | MERN Stack | Web & AI Projects</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=F97316&width=435&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Bilal;CSE+Student+%7C+MERN+Developer;I+Love+Building+Cool+Tech+Projects!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=F97316&width=435&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Bilal;CSE+Student+%7C+Web+Developer;I+Love+Building+Smart+Projects!" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmx2YXh2bDhwdWl6eTZ6dXliOXBkcGNqZXFxb3g3NHR1bmZ6YmJuaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y4ak9Ki2GZCbJxAnJD/giphy.gif" width="300" />
+  <img src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif" width="300" />
 </p>
 
 ---
 
 ## 👨‍💻 About Me
 
-- 🎓 Second-Year CSE student at PES University  
-- 🔧 Currently learning **Docker** & exploring **System Design**
-- 💻 Tech Stack: **MERN**, **C**, **Unreal Engine**, **Tailwind CSS**, **Flask**
-- 🛠️ Actively building professional projects & tools
-- 📫 Reach me: `mohammedbilal96654@gmail.com`
-- 🌐 Portfolio: [https://bilalm.vercel.app/](https://bilalm.vercel.app/)
+- 🎓 Third-Year Computer Science Engineering student at **PES University**
+- 🧠 Qualified **JEE Mains** and joined PES through **KCET**
+- 💻 Passionate about building projects with **React**, **Tailwind CSS**, **Node.js**, and **Python**
+- ⚙️ Exploring AI integrations, Dockerized applications, and backend APIs
+- 📬 Reach me: `mohammedbilal96654@gmail.com`
+- 🌐 Portfolio: [bilalm.vercel.app](https://bilalm.vercel.app/)
 
 ---
 
-## 📲 Connect With Me
+## 🔗 Connect with Me
 
 <p align="left">
   <a href="https://linkedin.com/in/mohammed-bilal-23678328a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -33,47 +33,49 @@
 
 ---
 
-## 🧠 Skills & Tools
+## 🛠 Skills & Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,react,nodejs,mongodb,tailwind,bootstrap,c,python,git,github,docker,vite,vscode,unreal" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nodejs,mongodb,tailwind,bootstrap,c,python,git,github,docker,vite,vscode" />
 </p>
 
 ---
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mohammedbilal12345&theme=gruvbox&margin-w=10&row=2&column=3" />
-</p>
-
----
-
-## 📊 GitHub Stats
+## 📈 GitHub Stats & Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohammedbilal12345&show_icons=true&theme=radical&hide_border=true" width="47%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammedbilal12345&layout=compact&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammedbilal12365&show_icons=true&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammedbilal12365&layout=compact&theme=radical&hide_border=true" width="47%" />
 </div>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammedbilal12345&theme=radical&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammedbilal12365&theme=radical&hide_border=true" />
 </p>
 
 ---
 
-## 🚀 Highlight Projects
+## 🚀 Featured Projects
 
-| Project | Description | Tech |
-| 🔒 **Sécurité Système** | eCommerce platform for security products | React, Node.js, MongoDB |
-| 🤖 **SmartCartBot** | AI chatbot for shopping assistance | Flask, JavaScript, BotUI |
-| 💳 **Credit Card Fraud Detection** | Machine learning model to detect fraudulent transactions using real-world anonymized credit card data | Python, Pandas, Scikit-learn, Jupyter |
-| 🌐 **Portfolio Website** | Personal portfolio hosted on Netlify | HTML, CSS, JS |
+| Project | Description | Tech Stack |
+|--------|-------------|------------|
+| 🔒 **Sécurité Système** | eCommerce platform for security products | React, Tailwind, Node.js, MongoDB |
+| 🤝 **TeamBanalo** | Smart hackathon collaboration platform with AI teammate suggestions | React, FastAPI, Supabase, LangChain |
+| 🌐 **Portfolio Website** | Personal responsive portfolio hosted on Vercel | React, Tailwind, Framer Motion |
+| 📊 **Budget Survey 2024** | Interactive budget feedback form using frontend validation | HTML, CSS, JS |
 
+> 👀 Explore my projects [here](https://github.com/mohammedbilal12365)
 
 ---
 
-## 📌 Quote I Live By
+## 🧠 Currently Exploring
+
+- ✅ Docker + CI/CD Pipelines
+- ✅ Supabase & LangChain integrations
+- ✅ Clean system design for full-stack apps
+
+---
+
+## 📌 Favorite Quote
 
 > _“Code is like humor. When you have to explain it, it’s bad.” – Cory House_
 
@@ -85,4 +87,4 @@
 
 ---
 
-**Built with 💡 using Markdown | Maintained by Mohammed Bilal**
+<p align="center"><b>Built with ❤️ by Mohammed Bilal</b></p>
