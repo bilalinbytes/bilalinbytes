@@ -15,7 +15,7 @@
 
 <div align="center">
   
-### 🎯 `Final Year CSE @ PES University` • `Full Stack Wizard` • `AI Explorer` • `Real Impact Creator`
+### 🎯 `Third Year CSE @ PES University` • `Full Stack Wizard` • `AI Explorer` • `Real Impact Creator`
 
 </div>
 
