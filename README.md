@@ -26,18 +26,14 @@ const mohammed_bilal = {
     philosophy: "Building the future, one commit at a time",
     fun_fact: "I debug with console.log and I'm not ashamed 😄"
 };
-```
+````
 
 ## 🚀 What I'm Building
 
-- 🔥 **AI-Powered Applications** using LangChain & Transformers
-- ⚡ **Scalable Backend Systems** with Node.js & FastAPI  
-- 🎨 **Modern Frontend Experiences** in React & Next.js
-- 🛠️ **DevOps Pipelines** with Docker & Cloud Platforms
-
----
-
-
+* 🔥 **AI-Powered Applications** using LangChain & Transformers
+* ⚡ **Scalable Backend Systems** with Node.js & FastAPI
+* 🎨 **Modern Frontend Experiences** in React & Next.js
+* 🛠️ **DevOps Pipelines** with Docker & Cloud Platforms
 
 ---
 
@@ -46,24 +42,27 @@ const mohammed_bilal = {
 <div align="center">
 
 ### 🎯 Languages & Frameworks
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=next.js\&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge\&logo=node.js\&logoColor=white)
 
 ### 🤖 AI/ML & Data
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge&logoColor=black)
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=pytorch\&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge\&logo=tensorflow\&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge\&logo=langchain\&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge\&logoColor=black)
 
 ### 🗄️ Databases & Cloud
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=firebase&logoColor=white)
+
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge\&logo=mongodb\&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge\&logo=firebase\&logoColor=white)
 
 </div>
 
@@ -102,16 +101,6 @@ const mohammed_bilal = {
 
 ---
 
-## 📈 Contribution Graph
-
-<div align="center">
-  
-  [![Mohammed Bilal's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=bilalinbytes&theme=react-dark&hide_border=true&bg_color=0D1117&color=58A6FF&line=1F6FEB&point=FF6B6B)](https://github.com/ashutosh00710/github-readme-activity-graph)
-  
-</div>
-
----
-
 ## 🎯 Current Mission
 
 ```python
@@ -139,10 +128,10 @@ me.say_hi()
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://bilalm.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammed-bilal-dev)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohammedbilal96654@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bilalinbytes)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge\&logo=todoist\&logoColor=white)](https://bilalm.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/mohammed-bilal-dev)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:mohammedbilal96654@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bilalinbytes)
 
 </div>
 
@@ -158,10 +147,13 @@ me.say_hi()
 
 ---
 
-![Profile Views](https://komarev.com/ghpvc/?username=bilalinbytes&color=58A6FF&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=bilalinbytes\&color=58A6FF\&style=for-the-badge)
 
 </div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&width=100%"/>
 </div>
+```
+
+Let me know if you'd like to tweak or replace any more sections!
