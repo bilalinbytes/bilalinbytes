@@ -30,10 +30,6 @@ described, not exposed.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<img src="assets/tech.svg" width="100%" alt="stack grouped by architecture role: languages, services, data and AI, infrastructure" />
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## How I think about a system
 
 <img src="assets/terminal.svg" width="100%" alt="four engineering principles, in the order they get tested" />
