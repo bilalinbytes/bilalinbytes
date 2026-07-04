@@ -1,0 +1,63 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="mg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" fill="#0B0C11"/>
+  <text x="40" y="42" font-family="Arial" font-size="15" font-weight="600" fill="#EDEDF2">ModelMatrix — evaluation path (conceptual)</text>
+  <text x="40" y="63" font-family="monospace" font-size="10.5" fill="#7D8195">repository is private under a collaboration agreement — this diagram illustrates the approach, not the implementation</text>
+
+  <!-- eval request -->
+  <g transform="translate(90,180)">
+    <rect x="-55" y="-24" width="110" height="48" rx="6" fill="#16171F" stroke="#2A2C3B"/>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10.5" fill="#C9CBD8">EVAL REQUEST</text>
+  </g>
+
+  <!-- orchestrator -->
+  <g transform="translate(340,180)">
+    <rect x="-80" y="-40" width="160" height="80" rx="8" fill="#151626" stroke="#8B5CF6" stroke-width="1.2"/>
+    <text text-anchor="middle" y="-8" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">ORCHESTRATOR</text>
+    <text text-anchor="middle" y="12" font-family="monospace" font-size="9.5" fill="#8890A6">FastAPI</text>
+  </g>
+
+  <!-- providers -->
+  <g font-family="monospace" font-size="10.5" fill="#8890A6" text-anchor="middle">
+    <g transform="translate(620,110)">
+      <rect x="-70" y="-18" width="140" height="36" rx="6" fill="#16171F" stroke="#22D3EE" stroke-width="1"/>
+      <text y="5" fill="#C9CBD8">AWS BEDROCK</text>
+    </g>
+    <g transform="translate(620,250)">
+      <rect x="-70" y="-18" width="140" height="36" rx="6" fill="#16171F" stroke="#22D3EE" stroke-width="1"/>
+      <text y="5" fill="#C9CBD8">GOOGLE VERTEX AI</text>
+    </g>
+  </g>
+
+  <!-- scoring engine -->
+  <g transform="translate(880,180)">
+    <rect x="-75" y="-36" width="150" height="72" rx="8" fill="#151626" stroke="#22D3EE" stroke-width="1.1"/>
+    <text text-anchor="middle" y="-6" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">SCORING</text>
+    <text text-anchor="middle" y="12" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">ENGINE</text>
+  </g>
+
+  <!-- dashboard -->
+  <g transform="translate(1105,180)">
+    <rect x="-70" y="-30" width="140" height="60" rx="8" fill="#101116" stroke="#8B5CF6" stroke-width="1"/>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10" fill="#C9CBD8">DASHBOARD</text>
+  </g>
+
+  <path id="mp1" d="M 145,180 L 260,180" stroke="#2A2C3B" fill="none"/>
+  <path id="mp2" d="M 420,180 C 500,180 520,110 550,110" stroke="#2A2C3B" fill="none"/>
+  <path id="mp3" d="M 420,180 C 500,180 520,250 550,250" stroke="#2A2C3B" fill="none"/>
+  <path id="mp4" d="M 690,110 C 760,110 780,180 805,180" stroke="#2A2C3B" fill="none"/>
+  <path id="mp5" d="M 690,250 C 760,250 780,180 805,180" stroke="#2A2C3B" fill="none"/>
+  <path id="mp6" d="M 955,180 L 1035,180" stroke="#2A2C3B" fill="none"/>
+
+  <circle r="3" fill="#22D3EE" filter="url(#mg)"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#mp1"/></animateMotion></circle>
+  <circle r="3" fill="#8B5CF6" filter="url(#mg)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#mp2"/></animateMotion></circle>
+  <circle r="3" fill="#8B5CF6" filter="url(#mg)"><animateMotion dur="2.2s" begin="0.4s" repeatCount="indefinite"><mpath href="#mp3"/></animateMotion></circle>
+  <circle r="3" fill="#22D3EE" filter="url(#mg)"><animateMotion dur="1.9s" repeatCount="indefinite"><mpath href="#mp4"/></animateMotion></circle>
+  <circle r="3" fill="#22D3EE" filter="url(#mg)"><animateMotion dur="2.1s" begin="0.3s" repeatCount="indefinite"><mpath href="#mp5"/></animateMotion></circle>
+  <circle r="3.2" fill="#8B5CF6" filter="url(#mg)"><animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#mp6"/></animateMotion></circle>
+</svg>

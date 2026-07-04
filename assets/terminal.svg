@@ -1,0 +1,56 @@
+<svg width="1300" height="380" viewBox="0 0 1300 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1300" height="380" fill="#0A0A0F"/>
+  <text x="40" y="46" font-family="Arial" font-size="15" font-weight="600" fill="#EDEDF2">Principles, in the order they get tested</text>
+
+  <g font-family="monospace">
+    <!-- 01 -->
+    <g transform="translate(40,80)">
+      <rect width="290" height="255" rx="8" fill="#13141C" stroke="#25273A"/>
+      <text x="20" y="42" font-size="26" fill="#2A2C3B" font-weight="700">01</text>
+      <line x1="20" y1="56" x2="60" y2="56" stroke="#8B5CF6" stroke-width="2"/>
+      <text x="20" y="90" font-size="13" fill="#EDEDF2" font-family="Arial">The failure path is</text>
+      <text x="20" y="110" font-size="13" fill="#EDEDF2" font-family="Arial">part of the design.</text>
+      <text x="20" y="150" font-size="10.5" fill="#8890A6">Not an afterthought</text>
+      <text x="20" y="168" font-size="10.5" fill="#8890A6">retrofitted post-incident.</text>
+    </g>
+
+    <!-- 02 -->
+    <g transform="translate(345,80)">
+      <rect width="290" height="255" rx="8" fill="#13141C" stroke="#25273A"/>
+      <text x="20" y="42" font-size="26" fill="#2A2C3B" font-weight="700">02</text>
+      <line x1="20" y1="56" x2="60" y2="56" stroke="#22D3EE" stroke-width="2"/>
+      <text x="20" y="90" font-size="13" fill="#EDEDF2" font-family="Arial">If it isn't observed,</text>
+      <text x="20" y="110" font-size="13" fill="#EDEDF2" font-family="Arial">it isn't known.</text>
+      <text x="20" y="150" font-size="10.5" fill="#8890A6">Every service is traced</text>
+      <text x="20" y="168" font-size="10.5" fill="#8890A6">before it's called done.</text>
+    </g>
+
+    <!-- 03 -->
+    <g transform="translate(650,80)">
+      <rect width="290" height="255" rx="8" fill="#13141C" stroke="#25273A"/>
+      <text x="20" y="42" font-size="26" fill="#2A2C3B" font-weight="700">03</text>
+      <line x1="20" y1="56" x2="60" y2="56" stroke="#8B5CF6" stroke-width="2"/>
+      <text x="20" y="90" font-size="13" fill="#EDEDF2" font-family="Arial">AI systems are graded</text>
+      <text x="20" y="110" font-size="13" fill="#EDEDF2" font-family="Arial">on what they can prove.</text>
+      <text x="20" y="150" font-size="10.5" fill="#8890A6">An answer without a</text>
+      <text x="20" y="168" font-size="10.5" fill="#8890A6">citation doesn't ship.</text>
+    </g>
+
+    <!-- 04 -->
+    <g transform="translate(955,80)">
+      <rect width="290" height="255" rx="8" fill="#13141C" stroke="#25273A"/>
+      <text x="20" y="42" font-size="26" fill="#2A2C3B" font-weight="700">04</text>
+      <line x1="20" y1="56" x2="60" y2="56" stroke="#22D3EE" stroke-width="2"/>
+      <text x="20" y="90" font-size="13" fill="#EDEDF2" font-family="Arial">Boring and correct</text>
+      <text x="20" y="110" font-size="13" fill="#EDEDF2" font-family="Arial">beats clever and fragile.</text>
+      <text x="20" y="150" font-size="10.5" fill="#8890A6">Schema-first, idempotent,</text>
+      <text x="20" y="168" font-size="10.5" fill="#8890A6">explicit over implicit.</text>
+    </g>
+  </g>
+
+  <!-- connecting thread showing these compound in order -->
+  <path id="pp" d="M 185,355 L 490,355 L 795,355 L 1100,355" stroke="#2A2C3B" stroke-width="1.2" fill="none"/>
+  <circle r="3" fill="#8B5CF6">
+    <animateMotion dur="5s" repeatCount="indefinite"><mpath href="#pp"/></animateMotion>
+  </circle>
+</svg>

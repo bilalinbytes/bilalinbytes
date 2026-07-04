@@ -1,0 +1,63 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="g4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" fill="#0B0C11"/>
+  <text x="40" y="44" font-family="Arial" font-size="16" font-weight="600" fill="#EDEDF2">Quantara — research synthesis path</text>
+  <text x="40" y="66" font-family="monospace" font-size="11" fill="#7D8195">17 sources → specialized agents → one cited answer</text>
+
+  <!-- sources -->
+  <g font-family="monospace" font-size="10" fill="#8890A6" text-anchor="middle">
+    <g transform="translate(110,110)"><rect x="-55" y="-16" width="110" height="32" rx="6" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#C9CBD8">MARKET DATA</text></g>
+    <g transform="translate(110,180)"><rect x="-55" y="-16" width="110" height="32" rx="6" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#C9CBD8">NEWS</text></g>
+    <g transform="translate(110,250)"><rect x="-55" y="-16" width="110" height="32" rx="6" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#C9CBD8">SEC EDGAR</text></g>
+  </g>
+
+  <!-- agents -->
+  <g transform="translate(430,180)">
+    <rect x="-95" y="-70" width="190" height="140" rx="10" fill="#151626" stroke="#8B5CF6" stroke-width="1.2"/>
+    <text text-anchor="middle" y="-42" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">8 GROQ AGENTS</text>
+    <text text-anchor="middle" y="-22" font-family="monospace" font-size="9.5" fill="#8890A6">financial · valuation</text>
+    <text text-anchor="middle" y="-6" font-family="monospace" font-size="9.5" fill="#8890A6">technical · macro</text>
+    <text text-anchor="middle" y="10" font-family="monospace" font-size="9.5" fill="#8890A6">risk · portfolio</text>
+    <text text-anchor="middle" y="26" font-family="monospace" font-size="9.5" fill="#8890A6">news · SEC</text>
+    <text text-anchor="middle" y="50" font-family="monospace" font-size="9" fill="#22D3EE">llama-3.3-70b</text>
+  </g>
+
+  <!-- vector store branch -->
+  <g transform="translate(430,290)">
+    <rect x="-70" y="-16" width="140" height="32" rx="6" fill="#16171F" stroke="#22D3EE" stroke-width="1"/>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10" fill="#C9CBD8">QDRANT RAG</text>
+  </g>
+
+  <!-- synthesizer -->
+  <g transform="translate(730,180)">
+    <rect x="-70" y="-40" width="140" height="80" rx="8" fill="#151626" stroke="#22D3EE" stroke-width="1.1"/>
+    <text text-anchor="middle" y="-10" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">LEAD</text>
+    <text text-anchor="middle" y="8" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">SYNTHESIZER</text>
+  </g>
+
+  <!-- output -->
+  <g transform="translate(1010,180)">
+    <rect x="-90" y="-32" width="180" height="64" rx="8" fill="#101116" stroke="#8B5CF6" stroke-width="1"/>
+    <text text-anchor="middle" y="-4" font-family="monospace" font-size="10" fill="#C9CBD8">cited, streamed</text>
+    <text text-anchor="middle" y="14" font-family="monospace" font-size="10" fill="#C9CBD8">answer (SSE)</text>
+  </g>
+
+  <path id="qp1" d="M 165,110 C 280,110 300,150 335,155" stroke="#2A2C3B" fill="none"/>
+  <path id="qp2" d="M 165,180 L 335,180" stroke="#2A2C3B" fill="none"/>
+  <path id="qp3" d="M 165,250 C 280,250 300,210 335,205" stroke="#2A2C3B" fill="none"/>
+  <path id="qp4" d="M 430,250 L 430,220" stroke="#2A2C3B" fill="none"/>
+  <path id="qp5" d="M 525,180 L 660,180" stroke="#2A2C3B" fill="none"/>
+  <path id="qp6" d="M 800,180 L 920,180" stroke="#2A2C3B" fill="none"/>
+
+  <circle r="3" fill="#22D3EE" filter="url(#g4)"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#qp1"/></animateMotion></circle>
+  <circle r="3" fill="#22D3EE" filter="url(#g4)"><animateMotion dur="1.9s" begin="0.3s" repeatCount="indefinite"><mpath href="#qp2"/></animateMotion></circle>
+  <circle r="3" fill="#22D3EE" filter="url(#g4)"><animateMotion dur="2s" begin="0.6s" repeatCount="indefinite"><mpath href="#qp3"/></animateMotion></circle>
+  <circle r="2.6" fill="#8B5CF6"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#qp4"/></animateMotion></circle>
+  <circle r="3.4" fill="#8B5CF6" filter="url(#g4)"><animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#qp5"/></animateMotion></circle>
+  <circle r="3.4" fill="#8B5CF6" filter="url(#g4)"><animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite"><mpath href="#qp6"/></animateMotion></circle>
+</svg>

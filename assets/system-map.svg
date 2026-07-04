@@ -1,0 +1,55 @@
+<svg width="900" height="560" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="pg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0A0A0F"/>
+
+  <!-- connectors -->
+  <g stroke="#2A2C3B" stroke-width="1.4" fill="none">
+    <path id="d1" d="M450,70 L450,120 L260,120 L260,150"/>
+    <path id="d2" d="M450,70 L450,120 L640,120 L640,150"/>
+    <path id="d3" d="M260,190 L260,230"/>
+    <path id="d4" d="M640,190 L640,230"/>
+    <path id="d5" d="M260,270 L260,300 L200,300 L200,330"/>
+    <path id="d6" d="M260,270 L260,300 L320,300 L320,330"/>
+    <path id="d7" d="M640,270 L640,300 L580,300 L580,330"/>
+    <path id="d8" d="M640,270 L640,300 L700,300 L700,330"/>
+    <path id="d9" d="M260,230 L260,410 L450,410 L450,440"/>
+    <path id="d10" d="M640,230 L640,410 L450,410 L450,440"/>
+    <path id="d11" d="M450,480 L450,510"/>
+  </g>
+
+  <!-- traveling pulses on primary spine -->
+  <circle r="3" fill="#22D3EE" filter="url(#pg)"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#d1"/></animateMotion></circle>
+  <circle r="3" fill="#8B5CF6" filter="url(#pg)"><animateMotion dur="2.4s" begin="0.6s" repeatCount="indefinite"><mpath href="#d2"/></animateMotion></circle>
+  <circle r="2.6" fill="#22D3EE" filter="url(#pg)"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#d9"/></animateMotion></circle>
+  <circle r="2.6" fill="#8B5CF6" filter="url(#pg)"><animateMotion dur="3s" begin="0.8s" repeatCount="indefinite"><mpath href="#d10"/></animateMotion></circle>
+  <circle r="2.6" fill="#22D3EE"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#d11"/></animateMotion></circle>
+
+  <!-- root -->
+  <g transform="translate(450,50)" text-anchor="middle" font-family="Arial">
+    <circle r="10" fill="#EDEDF2"/>
+    <text y="-22" font-size="15" font-weight="600" fill="#EDEDF2">Mohammed Bilal</text>
+  </g>
+
+  <!-- branch labels -->
+  <g text-anchor="middle" font-family="monospace" font-size="12">
+    <g transform="translate(260,170)"><circle r="8" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.5;1" dur="2.6s" repeatCount="indefinite"/></circle><text y="-16" fill="#C9CBD8">BACKEND</text></g>
+    <g transform="translate(640,170)"><circle r="8" fill="#22D3EE"><animate attributeName="opacity" values="1;0.5;1" dur="2.9s" repeatCount="indefinite"/></circle><text y="-16" fill="#C9CBD8">AI SYSTEMS</text></g>
+
+    <g transform="translate(260,250)"><circle r="7" fill="#8B5CF6" opacity="0.85"/><text y="26" fill="#8890A6">FlowGate</text></g>
+    <g transform="translate(640,250)"><circle r="7" fill="#22D3EE" opacity="0.85"/><text y="26" fill="#8890A6">ModelMatrix</text></g>
+
+    <g transform="translate(200,350)"><rect x="-40" y="-14" width="80" height="28" rx="5" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#7D8195" font-size="10.5">Redis</text></g>
+    <g transform="translate(320,350)"><rect x="-45" y="-14" width="90" height="28" rx="5" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#7D8195" font-size="10.5">PostgreSQL</text></g>
+    <g transform="translate(580,350)"><rect x="-45" y="-14" width="90" height="28" rx="5" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#7D8195" font-size="10.5">Bedrock</text></g>
+    <g transform="translate(700,350)"><rect x="-48" y="-14" width="96" height="28" rx="5" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#7D8195" font-size="10.5">Vertex AI</text></g>
+
+    <g transform="translate(450,460)"><circle r="9" fill="#EDEDF2"><animate attributeName="opacity" values="1;0.6;1" dur="2.2s" repeatCount="indefinite"/></circle><text y="-18" fill="#C9CBD8" font-family="Arial" font-size="13" font-weight="600">O2Plus</text><text y="18" fill="#7D8195" font-size="10">shared surface: both domains feed patient risk model</text></g>
+
+    <g transform="translate(450,535)"><rect x="-70" y="-14" width="140" height="28" rx="5" fill="#16171F" stroke="#2A2C3B"/><text y="5" fill="#7D8195" font-size="10.5">React Native</text></g>
+  </g>
+</svg>

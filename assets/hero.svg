@@ -1,0 +1,103 @@
+<svg width="1400" height="460" viewBox="0 0 1400 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="30%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#151622"/>
+      <stop offset="100%" stop-color="#08080C"/>
+    </radialGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="460" fill="url(#bgGlow)"/>
+
+  <!-- faint structural grid -->
+  <g stroke="#1C1D28" stroke-width="1">
+    <line x1="0" y1="115" x2="1400" y2="115"/>
+    <line x1="0" y1="345" x2="1400" y2="345"/>
+    <line x1="466" y1="0" x2="466" y2="460"/>
+    <line x1="933" y1="0" x2="933" y2="460"/>
+  </g>
+
+  <!-- kicker + name -->
+  <text x="60" y="72" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="13" letter-spacing="4" fill="#22D3EE">SYSTEM ONLINE</text>
+  <text x="60" y="112" font-family="'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="600" fill="#EDEDF2">Mohammed Bilal</text>
+  <text x="60" y="140" font-family="'SF Mono', monospace" font-size="15" fill="#7D8195">Backend Engineer · Distributed Systems · Applied AI</text>
+
+  <!-- === service mesh diagram === -->
+  <g id="mesh" transform="translate(0,40)">
+
+    <!-- edge paths (gateway -> services) -->
+    <path id="p1" d="M 300,260 C 420,260 460,190 620,180" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+    <path id="p2" d="M 300,260 C 420,260 460,240 640,250" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+    <path id="p3" d="M 300,260 C 420,260 460,300 640,320" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+    <path id="p4" d="M 300,260 C 420,260 460,340 620,380" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+    <path id="p5" d="M 780,180 C 900,180 940,220 1080,240" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+    <path id="p6" d="M 800,320 C 920,320 960,260 1080,240" fill="none" stroke="#2A2C3B" stroke-width="1.5"/>
+
+    <!-- traveling packets -->
+    <circle r="3.5" fill="#22D3EE" filter="url(#softGlow)">
+      <animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#8B5CF6" filter="url(#softGlow)">
+      <animateMotion dur="3.1s" begin="0.4s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#22D3EE" filter="url(#softGlow)">
+      <animateMotion dur="2.8s" begin="0.9s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#8B5CF6" filter="url(#softGlow)">
+      <animateMotion dur="3.4s" begin="1.3s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion>
+    </circle>
+    <circle r="3" fill="#22D3EE" filter="url(#softGlow)">
+      <animateMotion dur="2.2s" begin="0.2s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion>
+    </circle>
+    <circle r="3" fill="#8B5CF6" filter="url(#softGlow)">
+      <animateMotion dur="2.5s" begin="0.7s" repeatCount="indefinite"><mpath href="#p6"/></animateMotion>
+    </circle>
+
+    <!-- gateway node -->
+    <g transform="translate(300,260)">
+      <circle r="16" fill="none" stroke="#8B5CF6" stroke-width="1.4" opacity="0.5">
+        <animate attributeName="r" values="16;30;16" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="9" fill="#8B5CF6"/>
+      <text x="0" y="38" text-anchor="middle" font-family="monospace" font-size="12" fill="#C9CBD8">GATEWAY</text>
+    </g>
+
+    <!-- service nodes -->
+    <g font-family="monospace" font-size="11" fill="#8890A6" text-anchor="middle">
+      <g transform="translate(700,175)">
+        <circle r="7" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+        <text y="-16">AUTH</text>
+      </g>
+      <g transform="translate(720,250)">
+        <circle r="7" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/></circle>
+        <text y="-16">USERS ×3</text>
+      </g>
+      <g transform="translate(720,320)">
+        <circle r="7" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/></circle>
+        <text y="26">PAYMENTS</text>
+      </g>
+      <g transform="translate(700,385)">
+        <circle r="7" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
+        <text y="26">NOTIFY</text>
+      </g>
+      <g transform="translate(1100,240)">
+        <circle r="8" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.5;1" dur="2.3s" repeatCount="indefinite"/></circle>
+        <text y="-18">REDIS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- baseline accent -->
+  <rect x="60" y="430" width="1280" height="2" fill="url(#accentLine)"/>
+</svg>

@@ -1,0 +1,59 @@
+name: Sync latest writing
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  sync-blog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch feed and update README
+        run: |
+          python3 - <<'PY'
+          import re, urllib.request, xml.etree.ElementTree as ET
+
+          FEED_URL = "https://www.mohammedbilal.me/blog/rss.xml"  # update if the real feed path differs
+
+          try:
+              raw = urllib.request.urlopen(FEED_URL, timeout=10).read()
+              root = ET.fromstring(raw)
+              items = root.findall(".//item")[:3]
+              if items:
+                  lines = []
+                  for item in items:
+                      title = item.findtext("title", "").strip()
+                      link = item.findtext("link", "").strip()
+                      lines.append(f"- [{title}]({link})")
+                  block = "\n".join(lines)
+              else:
+                  block = "_No posts published yet — check back soon._"
+          except Exception:
+              block = "_No posts published yet — check back soon._"
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r"(<!-- LATEST-WRITING:START -->)(.*?)(<!-- LATEST-WRITING:END -->)",
+              lambda m: f"{m.group(1)}\n{block}\n{m.group(3)}",
+              content,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_content)
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: sync latest writing"
+          git push

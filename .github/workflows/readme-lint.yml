@@ -1,0 +1,39 @@
+name: Lint README
+
+on:
+  push:
+    paths:
+      - "README.md"
+  pull_request:
+    paths:
+      - "README.md"
+  workflow_dispatch: {}
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: "README.md"
+
+  validate-svgs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm every referenced SVG is well-formed XML
+        run: |
+          set -e
+          python3 -c "
+          import glob, xml.dom.minidom as m, sys
+          bad = []
+          for f in glob.glob('assets/*.svg'):
+              try:
+                  m.parse(f)
+              except Exception as e:
+                  bad.append((f, str(e)))
+          for f, e in bad:
+              print(f'::error file={f}::{e}')
+          sys.exit(1 if bad else 0)
+          "

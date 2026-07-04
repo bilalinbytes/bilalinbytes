@@ -1,0 +1,54 @@
+<svg width="1400" height="480" viewBox="0 0 1400 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="layerFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16171F"/>
+      <stop offset="100%" stop-color="#101116"/>
+    </linearGradient>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="480" fill="#0A0A0F"/>
+
+  <!-- 4 layers -->
+  <g font-family="monospace" font-size="12" fill="#7D8195">
+    <rect x="60" y="30" width="1280" height="90" rx="6" fill="url(#layerFill)" stroke="#25273A"/>
+    <text x="84" y="65" fill="#EDEDF2" font-size="15" font-weight="600" font-family="Arial">Edge</text>
+    <text x="84" y="86">auth · rate limiting · caching · circuit breakers · retries</text>
+
+    <rect x="60" y="140" width="1280" height="90" rx="6" fill="url(#layerFill)" stroke="#25273A"/>
+    <text x="84" y="175" fill="#EDEDF2" font-size="15" font-weight="600" font-family="Arial">Services</text>
+    <text x="84" y="196">independently deployable · event-driven · schema-first</text>
+
+    <rect x="60" y="250" width="1280" height="90" rx="6" fill="url(#layerFill)" stroke="#25273A"/>
+    <text x="84" y="285" fill="#EDEDF2" font-size="15" font-weight="600" font-family="Arial">Data &amp; Intelligence</text>
+    <text x="84" y="306">postgres · redis · vector search · RAG · multi-provider LLM orchestration</text>
+
+    <rect x="60" y="360" width="1280" height="90" rx="6" fill="url(#layerFill)" stroke="#25273A"/>
+    <text x="84" y="395" fill="#EDEDF2" font-size="15" font-weight="600" font-family="Arial">Observability</text>
+    <text x="84" y="416">tracing · metrics · dashboards — so failure is seen, not discovered</text>
+  </g>
+
+  <!-- vertical request path threading all 4 layers -->
+  <line x1="1240" y1="75" x2="1240" y2="405" stroke="#2A2C3B" stroke-width="1.5"/>
+  <circle r="4" fill="#22D3EE" filter="url(#glow2)">
+    <animateMotion dur="3.2s" repeatCount="indefinite" path="M 1240,75 L 1240,405"/>
+  </circle>
+  <circle r="4" fill="#8B5CF6" filter="url(#glow2)">
+    <animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M 1240,75 L 1240,405"/>
+  </circle>
+
+  <!-- side taps from observability into every layer -->
+  <g stroke="#8B5CF6" stroke-width="1" stroke-dasharray="3 4" opacity="0.5">
+    <line x1="100" y1="405" x2="100" y2="75"/>
+    <line x1="100" y1="75" x2="130" y2="75"/>
+    <line x1="100" y1="185" x2="130" y2="185"/>
+    <line x1="100" y1="295" x2="130" y2="295"/>
+    <line x1="100" y1="405" x2="130" y2="405"/>
+  </g>
+  <circle cx="100" cy="405" r="3" fill="#8B5CF6">
+    <animate attributeName="cy" values="405;75;405" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

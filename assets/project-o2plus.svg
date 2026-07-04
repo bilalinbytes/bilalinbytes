@@ -1,0 +1,66 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="og" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" fill="#0B0C11"/>
+  <text x="40" y="42" font-family="Arial" font-size="15" font-weight="600" fill="#EDEDF2">O2Plus — patient monitoring path (conceptual)</text>
+  <text x="40" y="63" font-family="monospace" font-size="10.5" fill="#7D8195">repository is private under a hospital data-handling agreement — this diagram illustrates the approach, not the implementation</text>
+
+  <!-- patient / doctor apps -->
+  <g font-family="monospace" font-size="10.5" fill="#8890A6" text-anchor="middle">
+    <g transform="translate(110,120)">
+      <rect x="-70" y="-20" width="140" height="40" rx="6" fill="#16171F" stroke="#2A2C3B"/>
+      <text y="5" fill="#C9CBD8">PATIENT APP</text>
+    </g>
+    <g transform="translate(110,220)">
+      <rect x="-70" y="-20" width="140" height="40" rx="6" fill="#16171F" stroke="#2A2C3B"/>
+      <text y="5" fill="#C9CBD8">DOCTOR APP</text>
+    </g>
+  </g>
+
+  <!-- backend -->
+  <g transform="translate(380,170)">
+    <rect x="-85" y="-42" width="170" height="84" rx="8" fill="#151626" stroke="#8B5CF6" stroke-width="1.2"/>
+    <text text-anchor="middle" y="-10" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">FASTAPI BACKEND</text>
+    <text text-anchor="middle" y="10" font-family="monospace" font-size="9.5" fill="#8890A6">SpO₂ / AQI ingest</text>
+  </g>
+
+  <!-- supabase -->
+  <g transform="translate(640,170)">
+    <rect x="-70" y="-30" width="140" height="60" rx="8" fill="#16171F" stroke="#22D3EE" stroke-width="1"/>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="10.5" fill="#C9CBD8">SUPABASE</text>
+  </g>
+
+  <!-- alert pipeline -->
+  <g transform="translate(880,170)">
+    <rect x="-80" y="-36" width="160" height="72" rx="8" fill="#151626" stroke="#22D3EE" stroke-width="1.1"/>
+    <text text-anchor="middle" y="-6" font-family="Arial" font-size="12" font-weight="600" fill="#EDEDF2">RISK MODEL</text>
+    <text text-anchor="middle" y="12" font-family="monospace" font-size="9.5" fill="#8890A6">alert pipeline</text>
+  </g>
+
+  <!-- dashboard -->
+  <g transform="translate(1100,170)">
+    <rect x="-70" y="-28" width="140" height="56" rx="8" fill="#101116" stroke="#8B5CF6" stroke-width="1"/>
+    <text text-anchor="middle" y="5" font-family="monospace" font-size="9.5" fill="#C9CBD8">ANALYTICS</text>
+  </g>
+
+  <path id="op1" d="M 180,120 C 260,120 280,170 295,170" stroke="#2A2C3B" fill="none"/>
+  <path id="op2" d="M 180,220 C 260,220 280,170 295,170" stroke="#2A2C3B" fill="none"/>
+  <path id="op3" d="M 465,170 L 570,170" stroke="#2A2C3B" fill="none"/>
+  <path id="op4" d="M 710,170 L 800,170" stroke="#2A2C3B" fill="none"/>
+  <path id="op5" d="M 960,170 L 1030,170" stroke="#2A2C3B" fill="none"/>
+
+  <circle r="3" fill="#22D3EE" filter="url(#og)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#op1"/></animateMotion></circle>
+  <circle r="3" fill="#22D3EE" filter="url(#og)"><animateMotion dur="2.2s" begin="0.4s" repeatCount="indefinite"><mpath href="#op2"/></animateMotion></circle>
+  <circle r="3" fill="#8B5CF6" filter="url(#og)"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#op3"/></animateMotion></circle>
+  <circle r="3" fill="#8B5CF6" filter="url(#og)"><animateMotion dur="1.7s" repeatCount="indefinite"><mpath href="#op4"/></animateMotion></circle>
+  <circle r="3.2" fill="#22D3EE" filter="url(#og)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#op5"/></animateMotion></circle>
+
+  <!-- heartbeat motif, since this system's core signal is SpO2 -->
+  <path d="M 40,270 L 70,270 L 82,250 L 96,290 L 110,260 L 122,270 L 160,270" stroke="#22D3EE" stroke-width="1.4" fill="none" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+</svg>

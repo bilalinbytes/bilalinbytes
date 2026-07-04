@@ -1,0 +1,73 @@
+name: Update repo stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch real public-repo stats and update README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, urllib.request
+
+          owner = os.environ["OWNER"]
+          token = os.environ["GH_TOKEN"]
+
+          req = urllib.request.Request(
+              f"https://api.github.com/users/{owner}/repos?per_page=100&type=owner",
+              headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"},
+          )
+          repos = json.load(urllib.request.urlopen(req))
+          public = [r for r in repos if not r["fork"]]
+
+          stars = sum(r["stargazers_count"] for r in public)
+          langs = {}
+          for r in public:
+              if r["language"]:
+                  langs[r["language"]] = langs.get(r["language"], 0) + 1
+
+          top_langs = sorted(langs.items(), key=lambda kv: -kv[1])[:5]
+          lang_line = " · ".join(f"{name} ({count})" for name, count in top_langs) or "no public repos with a detected primary language"
+
+          from datetime import datetime, timezone
+          updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+          block = (
+              f"**Public repositories:** {len(public)}  \n"
+              f"**Total stars:** {stars}  \n"
+              f"**Most-used languages (by repo count):** {lang_line}  \n"
+              f"<sub>Pulled live from the GitHub API · last updated {updated}</sub>"
+          )
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r"(<!-- REPO-STATS:START -->)(.*?)(<!-- REPO-STATS:END -->)",
+              lambda m: f"{m.group(1)}\n{block}\n{m.group(3)}",
+              content,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_content)
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update live repo stats"
+          git push

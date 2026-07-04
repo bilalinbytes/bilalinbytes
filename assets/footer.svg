@@ -1,0 +1,8 @@
+<svg width="1400" height="120" viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="120" fill="#08080C"/>
+  <line x1="0" y1="0" x2="1400" y2="0" stroke="#1C1D28"/>
+  <circle cx="700" cy="42" r="4" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="700" y="80" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="3" fill="#5C5F70">STATUS: OPERATIONAL</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg width="1300" height="360" viewBox="0 0 1300 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="tglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1300" height="360" fill="#0A0A0F"/>
+  <text x="40" y="42" font-family="Arial" font-size="15" font-weight="600" fill="#EDEDF2">Stack, by architecture role</text>
+  <text x="40" y="62" font-family="monospace" font-size="11" fill="#7D8195">not a badge wall — grouped by what each layer is responsible for</text>
+
+  <!-- 4 columns -->
+  <g font-family="monospace" font-size="12">
+
+    <!-- Languages / Runtime -->
+    <g transform="translate(40,95)">
+      <rect width="290" height="235" rx="8" fill="#13141C" stroke="#25273A"/>
+      <circle cx="22" cy="26" r="4" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="36" y="30" fill="#EDEDF2" font-family="Arial" font-size="13" font-weight="600">Languages</text>
+      <g fill="#B8BBC9">
+        <text x="20" y="58">Go</text>
+        <text x="20" y="80">Python</text>
+        <text x="20" y="102">TypeScript</text>
+        <text x="20" y="124">JavaScript</text>
+        <text x="20" y="146">SQL</text>
+      </g>
+    </g>
+
+    <!-- Services / Frameworks -->
+    <g transform="translate(345,95)">
+      <rect width="290" height="235" rx="8" fill="#13141C" stroke="#25273A"/>
+      <circle cx="22" cy="26" r="4" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/></circle>
+      <text x="36" y="30" fill="#EDEDF2" font-family="Arial" font-size="13" font-weight="600">Services</text>
+      <g fill="#B8BBC9">
+        <text x="20" y="58">Gin (Go)</text>
+        <text x="20" y="80">FastAPI</text>
+        <text x="20" y="102">Next.js / React</text>
+        <text x="20" y="124">React Native</text>
+        <text x="20" y="146">Celery</text>
+      </g>
+    </g>
+
+    <!-- Data & AI -->
+    <g transform="translate(650,95)">
+      <rect width="290" height="235" rx="8" fill="#13141C" stroke="#25273A"/>
+      <circle cx="22" cy="26" r="4" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
+      <text x="36" y="30" fill="#EDEDF2" font-family="Arial" font-size="13" font-weight="600">Data &amp; AI</text>
+      <g fill="#B8BBC9">
+        <text x="20" y="58">PostgreSQL</text>
+        <text x="20" y="80">Redis</text>
+        <text x="20" y="102">Qdrant</text>
+        <text x="20" y="124">Groq / Bedrock / Vertex</text>
+        <text x="20" y="146">Supabase</text>
+      </g>
+    </g>
+
+    <!-- Infra / Observability -->
+    <g transform="translate(955,95)">
+      <rect width="290" height="235" rx="8" fill="#13141C" stroke="#25273A"/>
+      <circle cx="22" cy="26" r="4" fill="#22D3EE"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
+      <text x="36" y="30" fill="#EDEDF2" font-family="Arial" font-size="13" font-weight="600">Infra &amp; Observability</text>
+      <g fill="#B8BBC9">
+        <text x="20" y="58">Docker / AWS</text>
+        <text x="20" y="80">GitHub Actions</text>
+        <text x="20" y="102">Prometheus / Grafana</text>
+        <text x="20" y="124">OpenTelemetry</text>
+        <text x="20" y="146">Jaeger</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- connecting thread across columns, signaling these aren't siloed -->
+  <path id="tp" d="M 185,330 L 490,330 L 795,330 L 1100,330" stroke="#2A2C3B" stroke-width="1.2" fill="none"/>
+  <circle r="3" fill="#22D3EE" filter="url(#tglow)"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#tp"/></animateMotion></circle>
+</svg>
