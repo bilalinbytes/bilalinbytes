@@ -81,7 +81,7 @@ Observability threads through every layer instead of bolting onto the last one.
 
 <img src="assets/divider.svg" width="100%" alt="" /> -->
 
-## Projects
+<!-- ## Projects
 
 ### FlowGate — distributed API gateway
 
@@ -133,4 +133,4 @@ O2Plus is a respiratory monitoring platform built with AIIMS Delhi — live SpO�
 air-quality tracking feeding a real risk model, not a generic vitals dashboard.
 
 <img src="assets/divider.svg" width="100%" alt="" />
-
+ -->
