@@ -8,14 +8,13 @@
 <tr>
 <td width="70%" valign="top">
 
-I build the layer that sits underneath products — the part that's supposed to be
-invisible, because it never breaks. Gateways that hold up under real traffic.
-Retrieval pipelines that answer from evidence, not confidence. Observability that
-tells you what happened before a customer has to.
+Hi, I'm Bilal.
 
-Two systems below are public. Two were built under agreements with partners I don't
-get to name-drop details for — a hospital and an enterprise cloud team — so they're
-described, not exposed.
+Final-year CS student at PES University. Built 14+ applications across AI, backend, and end-to-end LLM systems because "I'll just build it myself" somehow became a personality trait.
+
+Most days I'm designing APIs, chasing race conditions, teaching AI to cite its sources, and convincing distributed systems to cooperate.
+
+Everything below is either something I built, something I broke, or something that survived both.
 
 </td>
 <td width="30%" valign="top" align="right">
@@ -32,25 +31,20 @@ described, not exposed.
 
 ## How I think about a system
 
-<img src="assets/terminal.svg" width="100%" alt="four engineering principles, in the order they get tested" />
+<img src="assets/terminal.svg" width="100%" />
 
-Four rules I don't break, in order of how often they get tested:
+Things production taught me the hard way:
 
-**1. The failure path is part of the design, not an afterthought.**
-A circuit breaker retrofitted after an incident is a patch. Designed in from the
-gateway layer, it's an architecture decision — that's the difference between
-FlowGate's resilience and a service that just happens to work most days.
+**1. Design for the failure first.**
+Everything works until it doesn't. The unhappy path deserves as much attention as the happy one.
 
-**2. If you can't observe it, you don't actually know it works.**
-Every service I ship gets traced before it gets "done." Not because dashboards look
-good in a demo, but because the alternative is finding out from a user.
+**2. If you can't see it, you can't debug it.**
+Logs are nice. Traces are nicer. A Slack message saying "it's down" is not.
 
-**3. AI systems are graded on what they can prove, not what they generate.**
-Quantara's agents cite sources because an unsupported answer is a liability wearing
-a helpful tone. Retrieval that can't show its work doesn't ship.
+**3. AI should cite its homework.**
+If an LLM says "trust me bro," I don't.
 
-**4. Boring and correct beats clever and fragile.**
-Schema-first, idempotent by default, explicit over implicit. The interesting
-engineering problems are hard enough without adding self-inflicted ones.
+**4. Clever code has a surprisingly short life expectancy.**
+Simple code survives code reviews, production, and Future Me.
 
 
