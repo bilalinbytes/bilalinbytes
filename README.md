@@ -33,7 +33,7 @@ described, not exposed.
 <img src="assets/tech.svg" width="100%" alt="stack grouped by architecture role: languages, services, data and AI, infrastructure" />
 
 <img src="assets/divider.svg" width="100%" alt="" />
-
+<!-- 
 ## How the systems connect
 
 <img src="assets/system-map.svg" width="100%" alt="dependency graph: backend and AI systems branches converging on O2Plus" />
@@ -43,7 +43,7 @@ example: a React Native app backed by the same schema-first, observable-by-defau
 backend discipline as FlowGate, feeding a risk model that draws on the same
 multi-provider LLM orchestration patterns as Quantara.
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" /> -->
 
 ## How I think about a system
 
@@ -70,7 +70,7 @@ engineering problems are hard enough without adding self-inflicted ones.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## Architecture — the shape most of my systems take
+<!-- ## Architecture — the shape most of my systems take
 
 <img src="assets/architecture.svg" width="100%" alt="layered architecture: edge, services, data, observability" />
 
@@ -79,7 +79,7 @@ independently deployable so one failure domain can't take down another. Data and
 inference sit together because retrieval and generation are the same problem now.
 Observability threads through every layer instead of bolting onto the last one.
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" /> -->
 
 ## Projects
 
