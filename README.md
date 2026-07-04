@@ -116,7 +116,7 @@ Observability threads through every layer instead of bolting onto the last one.
 **[→ Repository](https://github.com/bilalinbytes/quantara)** · **[→ Demo](https://drive.google.com/file/d/1lpx3ViCeQ7w0_v1oteKPrzjUci1-gib8/view)**
 
 <br>
-
+<!-- 
 ### ModelMatrix &amp; O2Plus — private
 
 Built under partnership agreements, so I can't publish the repos or real screenshots
@@ -125,7 +125,7 @@ Built under partnership agreements, so I can't publish the repos or real screens
 <img src="assets/project-modelmatrix.svg" width="100%" alt="ModelMatrix conceptual architecture: eval request through orchestrator to Bedrock and Vertex AI to scoring engine" />
 
 ModelMatrix evaluates LLMs from AWS Bedrock and Google Vertex against consistent,
-auditable criteria for an enterprise customer of CoreStack.
+auditable criteria for an enterprise customer of CoreStack. -->
 
 <img src="assets/project-o2plus.svg" width="100%" alt="O2Plus conceptual architecture: patient and doctor apps through FastAPI backend and Supabase to a risk model and analytics dashboard" />
 
@@ -134,53 +134,3 @@ air-quality tracking feeding a real risk model, not a generic vitals dashboard.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## Automation
-
-This page maintains itself the same way I'd want a service to: scheduled jobs,
-real checks, and a failure that's visible instead of silent. No step here reports a
-status it hasn't actually measured.
-
-| Workflow | What it actually does | Status |
-|---|---|---|
-| `readme-links.yml` | Requests every URL in this README weekly, opens an issue on any 4xx/5xx | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/readme-links.yml/badge.svg) |
-| `readme-lint.yml` | Lints markdown + validates every SVG is well-formed XML on push | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/readme-lint.yml/badge.svg) |
-| `repo-metrics.yml` | Pulls real public-repo counts, stars, and language mix from the GitHub API nightly | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/repo-metrics.yml/badge.svg) |
-| `metrics.yml` | Regenerates the stats card below from live GitHub activity, twice daily | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/metrics.yml/badge.svg) |
-| `snake.yml` | Rebuilds the contribution snake from actual commit history, every 6h | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/snake.yml/badge.svg) |
-| `update-blog.yml` | Syncs the 3 most recent posts from the real RSS feed, weekly | ![](https://github.com/bilalinbytes/bilalinbytes/actions/workflows/update-blog.yml/badge.svg) |
-| `dependabot.yml` | Keeps the Action versions above patched automatically | — |
-
-<sub>Badges are pulled live from this repo's own Actions tab — if a job fails, the
-badge turns red here too. That's the point.</sub>
-
-**Live repo stats**
-<!-- REPO-STATS:START -->
-<sub>Populates after the first scheduled run of `repo-metrics.yml`.</sub>
-<!-- REPO-STATS:END -->
-
-**Latest writing**
-<!-- LATEST-WRITING:START -->
-_No posts published yet — check back soon._
-<!-- LATEST-WRITING:END -->
-
-<img src="assets/metrics.svg" width="100%" alt="live GitHub activity metrics" />
-
-<img src="https://raw.githubusercontent.com/bilalinbytes/bilalinbytes/output/github-contribution-grid-snake-dark.svg" width="100%" alt="contribution graph, rebuilt from real commit history every 6 hours" />
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-## Open source
-
-FlowGate and Quantara are public because they're useful past my own use case, not as
-a formality. Issues and PRs are genuinely read. ModelMatrix and O2Plus stay private
-out of respect for the partners they were built with — that's not a hedge, it's the
-actual reason.
-
-<img src="assets/footer.svg" width="100%" alt="" />
-
-<div align="center">
-
-Open to backend, AI infrastructure, and distributed systems roles.
-**[mohammedbilal96654@gmail.com](mailto:mohammedbilal96654@gmail.com)**
-
-</div>
