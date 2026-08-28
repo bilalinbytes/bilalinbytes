@@ -13,7 +13,7 @@ jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: DavidAnson/markdownlint-cli2-action@v17
         with:
           globs: "README.md"
@@ -21,7 +21,7 @@ jobs:
   validate-svgs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Confirm every referenced SVG is well-formed XML
         run: |
           set -e
